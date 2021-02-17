@@ -76,6 +76,7 @@ function playRound(playerSelection, computerSelection){
 }
 
 function winner_loser(wins, loses){
+    // evaaluates the winner
     if (wins > loses){
         return `You win against the machine. ${wins} wins vs. ${loses} machine wins`
     }else {
@@ -84,6 +85,7 @@ function winner_loser(wins, loses){
 }
 
 function game(){
+    // play 5 rounds of the game and prints out the winner
     wins = 0;
     loses = 0;
     rounds = 0;
