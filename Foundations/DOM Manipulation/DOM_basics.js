@@ -59,6 +59,20 @@ button3.addEventListener('click', () => {
 
 // button 4 call back
 const button4 = document.querySelector('#button4');
-button4.addEventListener('click', function (e) {
-  console.log(e);
+// button4.addEventListener('click', function (e) {
+//   console.log(e);
+// });
+
+button4.addEventListener('click', function (e){
+  e.target.style.backgroundColor = 'lightblue';
+});
+
+// buttons inside the .container
+// selecting a node list
+const buttons = document.querySelectorAll('.button');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    alert(button.className);
+  });
 });
