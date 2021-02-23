@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+:root {
+    --main-div: rgb(134, 128, 128);
+    --border-color: rgb(250, 184, 184);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.caesar-form {
+    width: 100%;
+    /* text-align: justify; */
+}
+
+.input-field {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.input-field__text {
+    width: 2;
+    margin-left: 15px;
+    text-align: middle;
+    padding: auto;
+}
+
+.caesar-form input {
+    width: 5rem;
+    display: block;
+    /* margin: auto; */
+    /* margin-bottom: 2rem;
+    padding: 3px; */
+}
+
+.submit {
+    width: 40%;
+    height: 2rem;
+    background: khaki;
+    border: 1px gray solid;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.submit:hover {
+    background: rgb(165, 157, 82);
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.submit:active {
+    background: gray;
+}
+
+/*is set to display: none so it can appear after the message has been cipher/deciphered*/
+.result-message {
+    display: none;
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.result-message h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
