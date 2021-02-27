@@ -16,7 +16,7 @@ for(i = 0; i < defaultSize * defaultSize; i++){
 }
 
 
-// drawArea.style.gridTemplateRows = `repeat(${defaultSize}, 1fr)`;
+// Create changeColor function. It chooses a color based on the defautColor
 
 function changeColor(e){
     if (defaultColor === 'black'){
@@ -30,7 +30,6 @@ function changeColor(e){
         opacity = Math.random();
         e.target.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
     }
-        
 }
 
 // Event Listeners
@@ -50,9 +49,6 @@ size.addEventListener('click', ()=>{
         alert("Please enter a number between 1 and 64.");
         return 0;
     }
-
-    
-    
 });
 
 rainbow.addEventListener('click', ()=>{
