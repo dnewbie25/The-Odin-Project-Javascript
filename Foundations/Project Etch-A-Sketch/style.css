@@ -32,7 +32,7 @@ h1 {
     font-weight: bold;
 }
 
-.preferences button {
+.set-choice {
     margin-top: 2rem;
     height: 6rem;
     width: 18rem;
@@ -40,20 +40,26 @@ h1 {
     border: tomato 2px solid;
     background: rgba(247, 114, 91, 0.836);
     text-transform: capitalize;
-    font-weight: bold;
     font-size: 2.2rem;
+    font-family: 'DotGothic16', sans-serif;
 }
 
-.preferences button:hover {
+.set-choice:hover {
     cursor: pointer;
     border: rgb(236, 38, 3) 2px solid;
     background: rgba(243, 154, 138, 0.836);
+    font-weight: bold;
 }
 
 .grid-container {
     margin: 3rem auto;
-    width: 64rem;
-    height: 64rem;
+    width: 800px;
+    height: 800px;
     background: #fff;
     border: 3px black solid;
+}
+
+.grid-container div {
+    background: #fff;
+    border: 1px solid black;
 }
