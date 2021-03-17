@@ -35,6 +35,7 @@ body {
     border-radius: 2rem;
     border-bottom: 0.4rem black solid;
     border-right: 0.4rem black solid;
+    box-shadow: 0.5rem 0.5rem 2rem black;
 }
 
 .screen {
