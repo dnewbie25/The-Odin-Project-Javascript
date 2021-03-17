@@ -62,10 +62,10 @@ body {
     height: 80%;
     display: grid;
     grid-template-areas: "percentage reset delete divide"
-                        "7 8 9 multiply"
-                        "4 5 6 substract"
-                        "3 2 1 sum"
-                        "square 0 dot equal";
+                        "seven eight nine multiply"
+                        "four five six substract"
+                        "three two one sum"
+                        "square zero dot equal";
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -88,4 +88,85 @@ button:hover {
 button:active {
     cursor: pointer;
     background: rgb(238, 155, 155);
+}
+
+/*Position of buttons according to grid areas*/
+.percentage {
+    grid-area: percentage;
+}
+
+.reset {
+    grid-area: reset;
+}
+
+.backspace {
+    grid-area: delete;
+}
+
+.divide { 
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.substract {
+    grid-area: substract;
+}
+
+.three {
+    grid-area: three;
+}
+
+.two {
+    grid-area: two;
+}
+
+.one {
+    grid-area: one;
+}
+
+.sum {
+    grid-area: sum;
+}
+
+.square {
+    grid-area: square;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.point { 
+    grid-area: dot;
+}
+
+.equal {
+    grid-area: equal;
 }
